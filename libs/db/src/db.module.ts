@@ -3,8 +3,10 @@ import { DbService } from './db.service';
 import { TypegooseModule } from 'nestjs-typegoose'
 import { User } from './models/user.model';
 import { Role } from './models/role.model';
+import { Access } from './models/access.model';
+import { RoleAccess } from './models/role-access.model';
 
-const models = TypegooseModule.forFeature([User, Role])
+const models = TypegooseModule.forFeature([User, Role, Access, RoleAccess])
 
 @Global()
 @Module({

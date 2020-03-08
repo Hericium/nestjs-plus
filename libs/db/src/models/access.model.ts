@@ -1,6 +1,6 @@
-import { prop, modelOptions, arrayProp, Ref } from '@typegoose/typegoose'
+import { prop, modelOptions } from '@typegoose/typegoose'
 import { ApiProperty } from '@nestjs/swagger' 
-import { Mongoose, Schema } from 'mongoose';
+import { Schema } from 'mongoose';
 
 @modelOptions({
   schemaOptions: {

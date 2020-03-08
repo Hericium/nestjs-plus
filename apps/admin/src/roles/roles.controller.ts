@@ -9,7 +9,6 @@ import { ReturnModelType } from '@typegoose/typegoose';
   model: Role,
 })
 
-@Controller('roles')
 @ApiTags('角色')
 @Controller('roles')
 export class RolesController {

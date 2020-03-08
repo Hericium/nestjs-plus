@@ -18,7 +18,14 @@ export class Role {
   @prop()
   description?: string;
 
-  @ApiProperty({description: '角色状态：1启用， 2禁用'})
+  @ApiProperty({description: '角色状态：1启用， 0禁用'})
   @prop({default: 1})
   status?: Number;
+
+  @arrayProp({
+    ref: 'User',
+    localField: '_id',
+    foreignField: 'role',
+  })
+  users: Ref<User>[];
 } 
