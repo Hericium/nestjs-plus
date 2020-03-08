@@ -6,7 +6,7 @@ import { InjectModel } from 'nestjs-typegoose';
 import { ReturnModelType } from '@typegoose/typegoose';
 
 @Crud({
-  model: Role 
+  model: Role,
 })
 
 @Controller('roles')
